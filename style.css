@@ -14,7 +14,8 @@
 
 body{
     background-color: rgb(241, 241, 231);
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     min-width: 100vw;
 
     display: flex;
@@ -22,7 +23,7 @@ body{
 }
 
 header{
-    height: 10rem;
+    height: 5rem;
     background-color: rgb(221, 224, 228);
 }
 
@@ -58,9 +59,20 @@ li:hover, button:hover{
 
 main{
     min-height: calc(100vh - 20rem);
+    height: fit-content;
+
+    box-sizing: border-box;
+    overflow: hidden;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.telas{
+    min-height: calc(100vh - 5rem);
+    min-width: 100vw;
+
+    height: fit-content;
 }
 
 .formulario{
@@ -68,7 +80,7 @@ main{
 
     border-radius: 0.4rem;
 
-    margin: auto;
+    margin: 2rem auto;
     padding: 2rem;
 
     width: 50%;
@@ -81,7 +93,7 @@ main{
 }
 
 button{
-    padding: 0.25rem;
+    padding: 0.75rem 0.25rem;
     border-radius: 0.4rem;
     border: none;
 }
@@ -97,7 +109,7 @@ button{
 .formulario > input, textarea, select{
     border: none;
 
-    padding: 0.25rem;
+    padding: 0.75rem;
     margin: 0.5rem 0 1.5rem 0;
 }
 
