@@ -33,25 +33,27 @@
                 <h1>Formulário de Inscrição</h1>
                 <p>Responda algumas informações para que efetuemos sua inscrição na vaga de emprego</p>
     
-                <label for="nome">Nome</label>
-                <input type="text" name="nome">
+                <label for="nome">Nome <span class="spanElementoObrigatorio">*</span></label>
+                <input id="inputFormularioNome" type="text" name="nome">
     
-                <label for="email">Email</label>
-                <input type="email" name="email">
+                <label for="email">Email <span class="spanElementoObrigatorio">*</span></label>
+                <input id="inputFormularioEmail" type="email" name="email">
     
-                <label for="cargo">Cargo</label>
-                <select name="cargo" id="">
-                    <option value="">Selecione um cargo</option>
-                    <option value="">Front-end developer</option>
-                    <option value="">Back-end developer</option>
-                    <option value="">DBA</option>
-                    <option value="">DevOps</option>
+                <label for="cargo">Cargo <span class="spanElementoObrigatorio">*</span></label>
+                <select id="selectFormularioCargo" name="cargo" id="" required>
+                    <option value="" selected disabled>Selecione um cargo</option>
+                    <option value="Front-end">Front-end developer</option>
+                    <option value="Back-end">Back-end developer</option>
+                    <option value="DBA">DBA</option>
+                    <option value="DevOps">DevOps</option>
                 </select>
     
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id=""></textarea>
-    
-                <button type="submit" onClick="" >Enviar</button>
+                <textarea id="textareaFormularioMensagem" name="mensagem" id=""></textarea>
+
+                <button class="btnEnviarFormulario" onclick="validarInformacoesFormulario()">Enviar</button>
+
+                <p><span class="spanElementoObrigatorio">*</span> : Obrigatório</p>
             </form>
         </div>
         <div class="telas"></div>
@@ -66,5 +68,5 @@
         </div>
     </footer>
 </body>
-
+<script src="script.js" defer></script>
 </html>
