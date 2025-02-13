@@ -14,7 +14,6 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/estiloIndex.css">
 
     <title>Atividade 12/02/2025</title>
 </head>
@@ -23,21 +22,19 @@
     <header>
         <nav>
             <ul>
-                <li class="btnNavegacao"><a href="#">Home</a></li>
+                <li class="btnNavegacao"><a href="index.html">Home</a></li>
                 <li class="btnNavegacao"><a href="formulário.html">Formulário</a></li>
                 <li class="btnNavegacao"><a href="carrossel.html">Carrossel</a></li>
-                <li class="btnNavegacao"><a href="jogo.html">Jogo</a></li>
+                <li class="btnNavegacao"><a href="#">Jogo</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="telsa">
-            
-        </div>
-        <div class="conteudo">
-            <h1>Bem-vindo!</h1> 
-            <p>Meu nome é Emanuel e criei esse site com intuito de demonstrar algumas habilidades em desenvolvimento web, espero que se divirta &#10084;</p>
-            <img class="gifGatinhoTomandoCafe" src="assets/gif/gifGatoTomandoCafe.gif" alt="Gif da arte de um gatinho branco tomando café com uma xícara laranja">
+        <div class="containerJogo">
+            <h1>Jogo da Adivinhação</h1>
+            <p>Iremos jogar um jogo de adivinhação de um número inteiro, lembre-se que conforme você ganhar, a dificuldade será aumentada!</p>
+            <input type="number" min="0" hidden>
+            <button class="btnIniciarJogo">Iniciar Jogo</button>
         </div>
     </main>
     <footer>

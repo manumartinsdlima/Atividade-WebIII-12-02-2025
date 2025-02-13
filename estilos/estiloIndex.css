@@ -1,0 +1,32 @@
+.conteudo{
+    width: 45rem;
+    max-width: 90%;
+
+    background-color: rgb(221, 224, 228);
+
+    margin: auto;
+    padding: 2rem;
+
+    opacity: 1;
+
+    border: .1rem solid #000;
+    border-radius: 0.4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.conteudo > h1, .conteudo > p {
+    font-size: 1.5rem;
+}
+
+.conteudo > .gifGatinhoTomandoCafe{
+    align-self: center;
+    border: .1rem solid #000;
+}
+
+.gifGatinhoTomandoCafe{
+    max-height: 15rem;
+    max-width: 15rem;
+}

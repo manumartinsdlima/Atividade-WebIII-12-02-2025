@@ -26,6 +26,8 @@ header{
     height: 5rem;
     overflow: hidden;
     background-color: rgb(221, 224, 228);
+
+    border-bottom: .1rem solid #000;
 }
 
 nav{
@@ -45,13 +47,22 @@ ul{
 }
 
 li{
-    padding: 1rem;
-    border-radius: 0.4rem;
-
     list-style: none;
 }
 
-li:hover, button:hover{
+li > a {
+    color:#000;
+    text-decoration: none;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 1rem;
+
+    border-radius: 0.4rem;
+}
+
+li:hover, button:hover, li:hover > a{
     color: #fff;
     background-color: #000;
 
@@ -59,8 +70,10 @@ li:hover, button:hover{
 }
 
 main{
-    min-height: calc(100vh - 20rem);
+    min-height: calc(100vh - 15rem);
     height: fit-content;
+
+    background-image: url(/assets/img/backgroundNovelos.jpg);
 
     box-sizing: border-box;
     overflow: hidden;
@@ -84,6 +97,7 @@ main{
     background-color: rgb(221, 224, 228);
 
     border-radius: 0.4rem;
+    border: .1rem solid #000;
 
     margin: 2rem auto;
     padding: 2rem;
@@ -105,7 +119,7 @@ main{
 button{
     padding: 1.25rem 0.25rem;
     border-radius: 0.4rem;
-    border: none;
+    border: .1rem solid #000;
 }
 
 .formulario > h1 {
@@ -117,7 +131,7 @@ button{
 }
 
 .formulario > input, textarea, select{
-    border: none;
+    border: .1rem solid #000;
     border-radius: .4rem;
 
     padding: 0.75rem;
@@ -146,6 +160,8 @@ footer{
     height: 10rem;
     background-color: rgb(221, 224, 228);
 
+    border-top: .1rem solid #000;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -159,3 +175,4 @@ footer{
     margin: 0 .5rem 0 .5rem;
     text-decoration: none;
 }
+

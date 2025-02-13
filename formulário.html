@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <title>Atividade 12/02/2025</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="btnNavegacao"><a href="index.html">Home</a></li>
+                <li class="btnNavegacao"><a href="#">Formulário</a></li>
+                <li class="btnNavegacao"><a href="carrossel.html">Carrossel</a></li>
+                <li class="btnNavegacao"><a href="jogo.html">Jogo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" class="formulario">
+            <h1>Formulário de Inscrição</h1>
+            <p>Responda algumas informações para que efetuemos sua inscrição na vaga de emprego</p>
+
+            <label for="inputFormularioNome">Nome <span class="spanElementoObrigatorio">*</span></label>
+            <input id="inputFormularioNome" type="text" name="nome">
+
+            <label for="inputFormularioEmail">Email <span class="spanElementoObrigatorio">*</span></label>
+            <input id="inputFormularioEmail" type="email" name="email">
+
+            <label for="selectFormularioCargo">Cargo <span class="spanElementoObrigatorio">*</span></label>
+            <select id="selectFormularioCargo" name="cargo" id="" required>
+                <option value="" selected disabled>Selecione um cargo</option>
+                <option value="Front-end">Front-end developer</option>
+                <option value="Back-end">Back-end developer</option>
+                <option value="DBA">DBA</option>
+                <option value="DevOps">DevOps</option>
+            </select>
+
+            <label for="textareaFormularioMensagem">Mensagem</label>
+            <textarea id="textareaFormularioMensagem" name="mensagem" id=""></textarea>
+
+            <button class="btnEnviarFormulario" onclick="validarInformacoesFormulario()">Enviar</button>
+
+            <p><span class="spanElementoObrigatorio">*</span> : Obrigatório</p>
+        </form>
+    </main>
+    <footer>
+        <p>&#169Emanuel Martins de Lima</p>
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/emanuel-lima-dev/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i>LinkedIn</a>
+            <a href="https://github.com/manumartinsdlima" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+        </div>
+    </footer>
+</body>
+<script src="script.js" defer></script>
+
+</html>
