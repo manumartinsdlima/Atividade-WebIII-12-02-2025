@@ -73,10 +73,12 @@ main{
     min-height: calc(100vh - 15rem);
     height: fit-content;
 
-    background-image: url(/assets/img/backgroundNovelos.jpg);
+    background-image: url(../assets/img/backgroundNovelos.jpg);
 
     box-sizing: border-box;
     overflow: hidden;
+
+    padding: 2rem;
 
     display: flex;
     flex-direction: row;
