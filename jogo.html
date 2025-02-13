@@ -14,6 +14,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/estiloJogo.css">
 
     <title>Atividade 12/02/2025</title>
 </head>
@@ -31,10 +32,17 @@
     </header>
     <main>
         <div class="containerJogo">
-            <h1>Jogo da Adivinhação</h1>
-            <p>Iremos jogar um jogo de adivinhação de um número inteiro, lembre-se que conforme você ganhar, a dificuldade será aumentada!</p>
-            <input type="number" min="0" hidden>
-            <button class="btnIniciarJogo">Iniciar Jogo</button>
+            <div class="containerTitulo">
+                <h1>Jogo da Adivinhação</h1>
+                <hr>
+            </div>
+            <div class="containerEnunciado">
+                <p class="enunciado">Iremos jogar um jogo de adivinhação de um número inteiro, lembre-se que conforme você ganhar, a dificuldade será aumentada!</p>
+            </div>
+            <div class="containerInput" hidden>
+                <input type="number" min="1" id="numero">
+            </div>
+            <button class="btnIniciarJogo" onclick="iniciarJogo()">Iniciar Jogo</button>
         </div>
     </main>
     <footer>
@@ -47,5 +55,6 @@
     </footer>
 </body>
 <script src="script.js" defer></script>
+<script src="scriptJogo.js" defer></script>
 
 </html>

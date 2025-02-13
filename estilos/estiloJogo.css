@@ -1,6 +1,50 @@
 .containerJogo{
     background-color: rgb(221, 224, 228);
-
-    display: flex;
+    max-width: 90%;
+    width: 60rem;
+    min-height: fit-content;
+    height: 30rem;
     
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 1rem;
+
+    align-self: center;
+    margin: auto;
+
+    border-radius: 0.4rem;
+}
+
+.containerTitulo{
+    flex: 1;
+}
+
+.containerEnunciado{
+    flex: 1;
+}
+
+.containerEnunciado > p{
+    align-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.containerInput{
+    flex: 1;
+
+    align-content: center;
+}
+
+.containerInput > input {
+    border-radius: .4rem;
+
+    padding: 1rem;
+}
+
+.containerTitulo > h1 {
+    text-align: center;
+
+    font-size: 2rem;
 }
